@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamp Manual All</title>
+    <link rel="stylesheet" href="stamp.style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+	  <a class="navbar-brand" href="#">Stamp</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+		  <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+		  <a class="nav-link" href="#">Features</a>
+		  <a class="nav-link" href="#">Pricing</a>
+		  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		</div>
+	  </div>
+	</nav>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6">
+                <div class="mt-5" id="stamp">
+
+                </div>
+            </div>
+
+            <div class="col">
+			
+				<div class="form-group">
+
+                    <label for="">Department :</label>
+                    <input type="text" id="department" class="form-control" oninput="myDepartment()">
+                </div>
+				<div class="form-group">
+
+                    <label for="">Name :</label>
+                    <input type="text" id="name" class="form-control" oninput="myName()">
+                </div>
+				
+			
+                <div class="form-group">
+
+                    <label for="">Radius : <span id="circleSizeValue"></span></label>
+                    <input type="range" min="50" max="120" value="50" id="circleSize" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Font Size : <span id="fontSizeValue"></span></label>
+                    <input type="range" min="8" max="80" value="12" id="fontSize" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Department</label>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">X position : <span id="deptXpositionValue"></span></label>
+                            <input type="range" min="1" max="260" value="130" id="deptXposition" class="form-control">
+                        </div>
+
+                        <div class="col">
+                            <label for="">Y position : <span id="deptYpositionValue"></span></label>
+                            <input type="range" min="10" max="300" value="130" id="deptYposition" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Date</label>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">X position : <span id="dateXpositionValue"></span></label>
+                            <input type="range" min="1" max="260" value="123" id="dateXposition" class="form-control">
+                        </div>
+
+                        <div class="col">
+                            <label for="">Y position : <span id="dateYpositionValue"></span></label>
+                            <input type="range" min="10" max="300" value="153" id="dateYposition" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">X position : <span id="nameXpositionValue"></span></label>
+                            <input type="range" min="1" max="260" value="120" id="nameXposition" class="form-control">
+                        </div>
+
+                        <div class="col">
+                            <label for="">Y position : <span id="nameYpositionValue"></span></label>
+                            <input type="range" min="10" max="300" value="180" id="nameYposition" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <script src="circle.stamp.js"></script>
+</body>
+
+</html>
